@@ -1,11 +1,8 @@
 import time
 
-logins = {
-    'fartface3000': 'poopybuttfart23',
-    'thesussyimpostor': 'vent123'
-}
-
+logins = {}
 new_dict = {}
+
 
 def account_management(username):
     while True:
@@ -52,8 +49,8 @@ def choice():
 
 
 def iteration_speed():
-    for i in range(1000000000):
-        new_dict.update({f"{i}": f"{i - (i*2)}"})
+    for i in range(10000):
+        new_dict.update({f"{i}": f"{i - (i * 2)}"})
 
     start_time = time.perf_counter()
     for i in new_dict:
@@ -81,8 +78,8 @@ def iteration_speed():
 
     print(f'times\n1: {time_one}\n2: {time_two}\n3: {time_three}\n4: {time_four}')
 
-iteration_speed()
 
+# iteration_speed()
 
-# while True:
-#    choice()
+while True:
+    choice()
